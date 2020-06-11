@@ -48,7 +48,7 @@ steps_median <- median(activity_total_steps$steps)
 *The mean of Total Number of steps take is 'r steps_mean'. *
 *The median of Total Number of steps taken in 'r steps_median'. *
 
-## What is the average daily activity pattern?
+##What is the average daily activity pattern?
 
 
 ```r

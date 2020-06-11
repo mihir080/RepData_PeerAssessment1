@@ -386,9 +386,7 @@ hist(activity_total_steps$steps, main = &quot;Total number of steps taken per da
 <pre class="r"><code>steps_mean &lt;- mean(activity_total_steps$steps)</code></pre>
 <pre class="r"><code>steps_median &lt;- median(activity_total_steps$steps)</code></pre>
 <p><em>The mean of Total Number of steps take is ‘r steps_mean’. </em> <em>The median of Total Number of steps taken in ‘r steps_median’. </em></p>
-</div>
-<div id="what-is-the-average-daily-activity-pattern" class="section level2">
-<h2>What is the average daily activity pattern?</h2>
+<p>##What is the average daily activity pattern?</p>
 <pre class="r"><code>average_daily_activity &lt;- aggregate(activity$steps, by = list(activity$interval), FUN = mean, na.rm = TRUE)
 names(average_daily_activity) &lt;- c(&quot;interval&quot;, &quot;mean&quot;)
 plot(average_daily_activity$interval, average_daily_activity$mean, type = &quot;l&quot;, lwd = 2, xlab = &quot;Interval&quot;, ylab = &quot;Avg Stpes&quot;, main = &quot;Average number of steps taken per interval&quot; )</code></pre>
